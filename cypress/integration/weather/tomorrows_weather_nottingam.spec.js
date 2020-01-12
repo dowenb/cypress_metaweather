@@ -1,17 +1,22 @@
 /// <reference types="Cypress" />
 
-context("Test Metaweather", () => {
-  beforeEach(() => {
-    cy.visit("https://example.cypress.io/commands/network-requests");
-  });
+/* eslint-env mocha */
+describe('Metaweather API', () => {
+   it.only('returns JSON', () => {
+    const today = new Date()
+    const tomorrow = new Date(today)
+    tomorrow.setDate(tomorrow.getDate() + 1)
+    const tmw = ''+ tomorrow.getFullYear() + '/' + (1 + tomorrow.getMonth()) + '/' + tomorrow.getUTCDate() + '/'
+    cy.request('location/30720/' + tmw)
+      .its('headers')
+      .its('content-type')
+      .should('include', 'application/json')
+  })
 
-  it("Get weather for Nottingham on the 11th of January 2020", () => {
-    cy.request(
-      "location/30720/2020/1/11/"
-    ).should(response => {
-      expect(response.status).to.eq(200);
-      expect(response).to.have.property("headers");
-      expect(response).to.have.property("duration");
-    });
-  });
-});
+  it('return status 200', () => {
+    cy.request('location/30720/year/month/day/')
+      .its('status')
+      .should('eq', 200)
+  })
+
+})
