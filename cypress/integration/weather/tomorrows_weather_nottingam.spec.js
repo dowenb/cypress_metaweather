@@ -2,7 +2,7 @@
 
 /* eslint-env mocha */
 describe('Metaweather API', () => {
-   xit('returns JSON', () => {
+   it('returns JSON', () => {
     const today = new Date()
     const tomorrow = new Date(today)
     tomorrow.setDate(tomorrow.getDate() + 1)
