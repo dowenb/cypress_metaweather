@@ -70,4 +70,4 @@ You can obtain the woeid (where on Earth id) by calling another end-point on Met
 curl https://www.metaweather.com/api/location/search/?query=nottingham
 ```
 
-[Screenshot](https://github.com/dowenb/cypress_metaweather/blob/master/images/2020-01-14.png)
+![Screenshot output from curl command](https://github.com/dowenb/cypress_metaweather/blob/master/images/2020-01-14.png "Screenshot output from curl command")
