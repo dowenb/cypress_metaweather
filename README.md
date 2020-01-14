@@ -55,8 +55,10 @@ For more infomation about running Cypress in a CI system, see the documentation:
 
 ## Using Fixtures to test multiple Cities and Days
 
-The tests in each_city.spec.js tests the weather in every City listed in cities_and_days.json.
+The tests in [each_city.spec.js](https://github.com/dowenb/cypress_metaweather/blob/master/cypress/integration/weather/each_city.spec.js "each_city.spec.js") tests the weather in every City listed in [cities_and_days.json](https://github.com/dowenb/cypress_metaweather/blob/master/cypress/fixtures/cities_and_days.json "cities_and_days.json").
+
 The cities_and_days.json contains an array of objects called 'weatherFor', each object contains the City, Day and URL to be tested.
+
 The URLs are used to append to the BASE URL for requests being made, and need to follow the following format:
 
 ```PowerShell
