@@ -4,6 +4,9 @@
 
 ## Execution instructions
 
+![instructions_header.jpg](https://github.com/dowenb/cypress_metaweather/blob/master/images/instructions_header.jpg)
+Photo by Markus Spiske [temporausch.com](https://temporausch.com "temporausch.com") from Pexels
+
 ### Clone Rep to run locally
 
 Change into your "dev" or working directory and use git to clone the repo locally.
