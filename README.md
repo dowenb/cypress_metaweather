@@ -53,6 +53,21 @@ cypress run
 
 For more infomation about running Cypress in a CI system, see the documentation: <https://docs.cypress.io/guides/guides/continuous-integration.html>
 
-## Fixtures
+## Using Fixtures to test multiple Cities and Days
 
-The weather_fixtures.spec.js runs tests using locations and data stored in json format.
+The tests in each_city.spec.js tests the weather in every City listed in cities_and_days.json.
+The cities_and_days.json contains an array of objects called 'weatherFor', each object contains the City, Day and URL to be tested.
+The URLs are used to append to the BASE URL for requests being made, and need to follow the following format:
+
+```PowerShell
+<woeid>/<year>/<month>/<day>/
+example: 34503/2020/1/17/
+```
+
+You can obtain the woeid (where on Earth id) by calling another end-point on MetaWeather API, for example:
+
+```PowerShell
+curl https://www.metaweather.com/api/location/search/?query=nottingham
+```
+
+[Screenshot](https://github.com/dowenb/cypress_metaweather/blob/master/images/2020-01-14.png)
