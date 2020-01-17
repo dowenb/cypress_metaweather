@@ -1,7 +1,7 @@
 {
     "weatherFor": [
-        {"City": "Nottingham", "Day": "Tomorrow", "url": "30720/2020/1/15/"},
-        {"City": "Hull", "Day": "Yesterday", "url": "25211/2020/1/13/"},
+        {"City": "Nottingham", "Day": "Tomorrow", "url": "30720/2020/1/18/"},
+        {"City": "Hull", "Day": "Yesterday", "url": "25211/2020/1/16/"},
         {"City": "Sheffield", "Day": "Interview", "url": "34503/2020/1/17/"}
     ]
 }
