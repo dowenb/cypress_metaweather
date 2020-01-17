@@ -49,7 +49,7 @@ Alternitivly, you can execute the tests using the CLI. To do this you can change
 cd c:\dev\cypress_metaweather
 npm test
 or
-cypress run
+npx cypress run
 ```
 
 ### Running in CI
